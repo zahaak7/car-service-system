@@ -1,1 +1,264 @@
-<p>Hello World</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Redline Auto Care — Book Your Next Service</title>
+<meta name="description" content="Redline Auto Care: oil changes, brakes, diagnostics and more. Book a slot online in under a minute." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand"><i class="fa-solid fa-gauge-high"></i>&nbsp;REDLINE <span>AUTO CARE</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Book Service</a>
+      <a href="about.html">About &amp; Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">[ REDLINE AUTO CARE ]</span>
+        <h1>Keep your car running at <em>redline</em>, not in the shop.</h1>
+        <p class="lead">Straightforward maintenance and repair from two technicians who'll tell you exactly what your car needs — and what it doesn't.</p>
+        <div class="hero-ctas">
+          <a href="booking.html" class="btn btn-primary">Book a Service</a>
+          <a href="services.html" class="btn btn-ghost">Browse Services</a>
+        </div>
+        <form class="quick-search" action="services.html" method="get">
+          <input type="text" name="q" placeholder="Search a service, e.g. 'brakes'" aria-label="Search services" />
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+
+      <div class="ticket fade-up">
+        <div class="ticket-stub">
+          <span>WORK ORDER · #WO-4471-2026</span>
+          <span class="ticket-badge">CONFIRMED</span>
+        </div>
+        <div class="ticket-body">
+          <div class="ticket-row"><span>Vehicle</span><span>Honda Civic '19</span></div>
+          <div class="ticket-row"><span>Service</span><span>Brake Inspection</span></div>
+          <div class="ticket-row"><span>Slot</span><span>Thu · 10:30 AM</span></div>
+          <div class="ticket-row"><span>Estimate</span><span>$90&ndash;$220</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div>
+        <div class="stat-number" data-target="15">0</div>
+        <div class="stat-label">Years Combined Experience</div>
+      </div>
+      <div>
+        <div class="stat-number" data-target="8">0</div>
+        <div class="stat-label">Core Services</div>
+      </div>
+      <div>
+        <div class="stat-number" data-target="4.9" data-suffix="/5">0</div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+      <div>
+        <div class="stat-number" data-target="24" data-suffix="hr">0</div>
+        <div class="stat-label">Typical Turnaround</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center" style="margin: 0 auto 48px;">
+        <span class="eyebrow">[ HOW IT WORKS ]</span>
+        <h2>From booking to drive-away in four steps</h2>
+      </div>
+      <div class="steps">
+        <div class="step fade-up">
+          <div class="step-num">01</div>
+          <h3>Choose a service</h3>
+          <p>Browse the service menu and see an upfront price range before you commit.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step-num">02</div>
+          <h3>Pick a slot</h3>
+          <p>Grab a date and time that suits you — no phone calls required.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step-num">03</div>
+          <h3>Drop off your car</h3>
+          <p>Hand over your keys and we'll confirm the final price before we start.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step-num">04</div>
+          <h3>Drive away happy</h3>
+          <p>Pick up your car, fully serviced, on the timeline we promised.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED SERVICES -->
+  <section class="section section-tight" style="background: var(--paper-card);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">[ POPULAR ]</span>
+        <h2>A few of our most-booked services</h2>
+        <p>Everything on the menu is available same-week — see the full list and prices.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card fade-up">
+          <div class="stub"><span class="service-icon"><i class="fa-solid fa-oil-can"></i></span><span class="service-tag">Maintenance</span></div>
+          <div class="service-body">
+            <h3>Oil Change &amp; Filter</h3>
+            <p>Synthetic or conventional oil with a new filter and 21-point check.</p>
+            <div class="service-meta"><span class="price">$40&ndash;$70</span><span>30 min</span></div>
+            <a class="btn btn-ghost btn-block btn-sm" href="booking.html?service=oil-change">Book This Service</a>
+          </div>
+        </article>
+        <article class="service-card fade-up">
+          <div class="stub"><span class="service-icon"><i class="fa-solid fa-wrench"></i></span><span class="service-tag">Repair</span></div>
+          <div class="service-body">
+            <h3>Brake Inspection &amp; Repair</h3>
+            <p>Pad, rotor and fluid inspection with repair as needed.</p>
+            <div class="service-meta"><span class="price">$90&ndash;$220</span><span>90 min</span></div>
+            <a class="btn btn-ghost btn-block btn-sm" href="booking.html?service=brake-service">Book This Service</a>
+          </div>
+        </article>
+        <article class="service-card fade-up">
+          <div class="stub"><span class="service-icon"><i class="fa-solid fa-microchip"></i></span><span class="service-tag">Repair</span></div>
+          <div class="service-body">
+            <h3>Engine Diagnostics</h3>
+            <p>Full OBD scan to trace warning lights back to their cause.</p>
+            <div class="service-meta"><span class="price">$50&ndash;$100</span><span>45 min</span></div>
+            <a class="btn btn-ghost btn-block btn-sm" href="booking.html?service=diagnostics">Book This Service</a>
+          </div>
+        </article>
+        <article class="service-card fade-up">
+          <div class="stub"><span class="service-icon"><i class="fa-solid fa-car-side"></i></span><span class="service-tag">Detailing</span></div>
+          <div class="service-body">
+            <h3>Full Wash &amp; Detailing</h3>
+            <p>Interior vacuum, wax and a hand wash that leaves it showroom-clean.</p>
+            <div class="service-meta"><span class="price">$30&ndash;$90</span><span>60 min</span></div>
+            <a class="btn btn-ghost btn-block btn-sm" href="booking.html?service=wash-detail">Book This Service</a>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center; margin-top: 36px;">
+        <a href="services.html" class="btn btn-primary">See All 8 Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center" style="margin: 0 auto 40px;">
+        <span class="eyebrow">[ CUSTOMERS ]</span>
+        <h2>What people say after they pick up their keys</h2>
+      </div>
+      <div class="testimonial-wrap">
+        <div class="testimonial-track">
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p class="quote">"Told me straight that my brakes could wait another few months instead of upselling me. That's rare."</p>
+              <p class="who">— Priya N., Honda Civic owner</p>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p class="quote">"Booked a slot in about thirty seconds on my phone and got a text reminder the morning of. Easy."</p>
+              <p class="who">— Marcus T., Ford Focus owner</p>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <p class="quote">"Diagnostics found the actual issue after two other shops just replaced parts and hoped."</p>
+              <p class="who">— Elena R., Toyota Corolla owner</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="testimonial-dots"></div>
+          <button class="next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Your next service slot is a minute away.</h2>
+      <a href="booking.html" class="btn btn-ghost">Book a Service Now</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand"><i class="fa-solid fa-gauge-high"></i>&nbsp;REDLINE <span>AUTO CARE</span></a>
+      <p style="margin-top:14px;">Independent auto shop run by two technicians who'd rather fix it right than fix it twice.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book Service</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Oil Change</a></li>
+        <li><a href="services.html">Brakes</a></li>
+        <li><a href="services.html">Diagnostics</a></li>
+        <li><a href="services.html">Detailing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-location-dot"></i>&nbsp; 123 Garage Row, Springfield</p>
+      <p><i class="fa-solid fa-phone"></i>&nbsp; (555) 019-2044</p>
+      <p><i class="fa-solid fa-envelope"></i>&nbsp; hello@redlineauto.example</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 Redline Auto Care. Student project — not a real business.</span>
+    <span>Built by Person 1 &amp; Person 2 for the Agile &amp; DevOps lab.</span>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
