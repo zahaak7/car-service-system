@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book a Service — Redline Auto Care</title>
+<meta name="description" content="Book a car service slot at Redline Auto Care and see an instant price estimate." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand"><i class="fa-solid fa-gauge-high"></i>&nbsp;REDLINE <span>AUTO CARE</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Book Service</a>
+      <a href="about.html">About &amp; Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section-tight">
+    <div class="container">
+      <span class="eyebrow">[ WORK ORDER ]</span>
+      <h1 style="font-size:clamp(30px,4.5vw,46px); margin-bottom:10px;">Book a Service</h1>
+      <p class="text-muted" style="max-width:520px;">Fill in the work order below. Everything here is stored only in your browser for this demo — nothing is sent anywhere.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container booking-grid">
+
+      <div>
+        <div id="booking-confirm" style="display:none; margin-bottom:28px;"></div>
+
+        <form id="booking-form" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jordan Lee" />
+              <span class="form-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 019-2044" />
+              <span class="form-error"></span>
+            </div>
+            <div class="form-field full">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+              <span class="form-error"></span>
+            </div>
+            <div class="form-field full">
+              <label for="vehicle">Vehicle Make &amp; Model</label>
+              <input type="text" id="vehicle" name="vehicle" placeholder="e.g. Honda Civic 2019" />
+              <span class="form-error"></span>
+            </div>
+            <div class="form-field full">
+              <label for="service-type">Service Type</label>
+              <select id="service-type" name="service-type"></select>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="preferred-date">Preferred Date</label>
+              <input type="date" id="preferred-date" name="date" />
+              <span class="form-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time">
+                <option value="" disabled selected>Choose a slot&hellip;</option>
+                <option>9:00 AM</option>
+                <option>10:30 AM</option>
+                <option>12:00 PM</option>
+                <option>1:30 PM</option>
+                <option>3:00 PM</option>
+                <option>4:30 PM</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-field full">
+              <label for="notes">Additional Notes (optional)</label>
+              <textarea id="notes" name="notes" placeholder="Anything we should know before you arrive?"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+        </form>
+      </div>
+
+      <aside class="estimate-panel">
+        <h3>ESTIMATE</h3>
+        <div class="gauge" style="--gauge-pct:0;">
+          <div class="gauge-readout">
+            <div class="amount">$0</div>
+            <div class="duration">Select a service</div>
+          </div>
+        </div>
+        <p class="estimate-note">Final price is confirmed at drop-off.</p>
+
+        <div class="my-bookings">
+          <h3 style="font-size:14px; margin-bottom:14px;">MY BOOKINGS</h3>
+          <div id="my-bookings-list"></div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand"><i class="fa-solid fa-gauge-high"></i>&nbsp;REDLINE <span>AUTO CARE</span></a>
+      <p style="margin-top:14px;">Independent auto shop run by two technicians who'd rather fix it right than fix it twice.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book Service</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Oil Change</a></li>
+        <li><a href="services.html">Brakes</a></li>
+        <li><a href="services.html">Diagnostics</a></li>
+        <li><a href="services.html">Detailing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-location-dot"></i>&nbsp; 123 Garage Row, Springfield</p>
+      <p><i class="fa-solid fa-phone"></i>&nbsp; (555) 019-2044</p>
+      <p><i class="fa-solid fa-envelope"></i>&nbsp; hello@redlineauto.example</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 Redline Auto Care. Student project — not a real business.</span>
+    <span>Built by Person 1 &amp; Person 2 for the Agile &amp; DevOps lab.</span>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/main.js"></script>
+<script src="js/services-booking.js"></script>
+</body>
+</html>
