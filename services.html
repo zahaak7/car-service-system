@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services — Redline Auto Care</title>
+<meta name="description" content="Browse Redline Auto Care's full service menu with upfront pricing and durations." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand"><i class="fa-solid fa-gauge-high"></i>&nbsp;REDLINE <span>AUTO CARE</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Book Service</a>
+      <a href="about.html">About &amp; Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section-tight">
+    <div class="container">
+      <span class="eyebrow">[ SERVICE MENU ]</span>
+      <h1 style="font-size:clamp(30px,4.5vw,46px); margin-bottom:10px;">Our Services</h1>
+      <p class="text-muted" style="max-width:520px;">Every price below is a range — we confirm the exact number after a quick look at your car, before any work starts.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="service-search" placeholder="Search services…" aria-label="Search services" />
+        </div>
+        <div class="filter-tags">
+          <button class="filter-tag active" data-filter="All">All</button>
+          <button class="filter-tag" data-filter="Maintenance">Maintenance</button>
+          <button class="filter-tag" data-filter="Repair">Repair</button>
+          <button class="filter-tag" data-filter="Detailing">Detailing</button>
+        </div>
+      </div>
+
+      <div class="services-grid" id="services-grid"></div>
+      <div class="empty-state" id="services-empty" style="display:none;">
+        <i class="fa-solid fa-magnifying-glass" style="font-size:22px; margin-bottom:10px; color:var(--steel);"></i>
+        <p>No services match that search. Try a different term or clear the filter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Not sure what your car needs?</h2>
+      <a href="booking.html" class="btn btn-ghost">Book a Diagnostic Check</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand"><i class="fa-solid fa-gauge-high"></i>&nbsp;REDLINE <span>AUTO CARE</span></a>
+      <p style="margin-top:14px;">Independent auto shop run by two technicians who'd rather fix it right than fix it twice.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book Service</a></li>
+        <li><a href="about.html">About &amp; Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Oil Change</a></li>
+        <li><a href="services.html">Brakes</a></li>
+        <li><a href="services.html">Diagnostics</a></li>
+        <li><a href="services.html">Detailing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-location-dot"></i>&nbsp; 123 Garage Row, Springfield</p>
+      <p><i class="fa-solid fa-phone"></i>&nbsp; (555) 019-2044</p>
+      <p><i class="fa-solid fa-envelope"></i>&nbsp; hello@redlineauto.example</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 Redline Auto Care. Student project — not a real business.</span>
+    <span>Built by Person 1 &amp; Person 2 for the Agile &amp; DevOps lab.</span>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/main.js"></script>
+<script src="js/services-booking.js"></script>
+</body>
+</html>
