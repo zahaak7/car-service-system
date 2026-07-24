@@ -101,3 +101,9 @@ function showConfirmation(booking, service) {
   box.style.display = "block";
   box.scrollIntoView({ behavior: "smooth", block: "center" });
 }
+// Auto-initialize when DOM is ready
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initBookingForm);
+} else {
+    initBookingForm();
+}
