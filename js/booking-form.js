@@ -107,3 +107,20 @@ if (document.readyState === "loading") {
 } else {
     initBookingForm();
 }
+// =========================================================
+// ⬇️ AUTO-INITIALIZATION - REPLACE THIS ENTIRE SECTION ⬇️
+// =========================================================
+
+// Wait for everything (including SERVICES) to load
+window.addEventListener('load', function() {
+    console.log('📄 Page fully loaded');
+    
+    // Check if SERVICES exists
+    if (typeof SERVICES === 'undefined') {
+        console.error('❌ SERVICES not loaded!');
+        return;
+    }
+    
+    console.log('✅ SERVICES found, initializing form...');
+    initBookingForm();
+});
