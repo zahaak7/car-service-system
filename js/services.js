@@ -1,8 +1,3 @@
-/* =========================================================
-   REDLINE AUTO CARE — services.js
-   Services page: render, search, filter
-   Owner: Person 2 (M8)
-   ========================================================= */
 
 function initServicesPage() {
   const grid = document.getElementById("services-grid");
