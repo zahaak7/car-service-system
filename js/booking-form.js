@@ -1,8 +1,4 @@
-/* =========================================================
-   REDLINE AUTO CARE — booking-form.js
-   Booking form: validation, service dropdown, submission
-   Owner: Person 2 (M9)
-   ========================================================= */
+
 
 function initBookingForm() {
   const form = document.getElementById("booking-form");
