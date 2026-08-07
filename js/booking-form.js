@@ -103,9 +103,6 @@ if (document.readyState === "loading") {
 } else {
     initBookingForm();
 }
-// =========================================================
-// ⬇️ AUTO-INITIALIZATION - REPLACE THIS ENTIRE SECTION ⬇️
-// =========================================================
 
 // Wait for everything (including SERVICES) to load
 window.addEventListener('load', function() {

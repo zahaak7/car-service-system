@@ -1,11 +1,4 @@
 
-/* =========================================================
-   REDLINE AUTO CARE — about.js
-   About page: FAQ accordion, contact form validation
-   Owner: Person 1 (M5)
-   ========================================================= */
-
-/* ---------- FAQ accordion ---------- */
 function initFAQ() {
   const items = document.querySelectorAll(".faq-item");
   if (!items.length) return;
