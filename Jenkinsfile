@@ -9,7 +9,7 @@ pipeline {
                 echo '========================================='
                 echo 'Code has been checked out from GitHub.'
                 echo 'Listing files in the workspace:'
-                sh 'ls -la'
+                bat 'dir'
             }
         }
 
@@ -19,7 +19,7 @@ pipeline {
                 echo 'STAGE 2: BUILD'
                 echo '========================================='
                 echo 'Simulating build process...'
-                sh 'echo "Build completed successfully"'
+                bat 'echo Build completed successfully'
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
                 echo 'STAGE 3: TEST'
                 echo '========================================='
                 echo 'Simulating test execution...'
-                sh 'echo "All tests passed successfully"'
+                bat 'echo All tests passed successfully'
             }
         }
     }
@@ -37,12 +37,12 @@ pipeline {
     post {
         success {
             echo '========================================='
-            echo 'PIPELINE FINISHED: SUCCESS ✅'
+            echo 'PIPELINE FINISHED: SUCCESS'
             echo '========================================='
         }
         failure {
             echo '========================================='
-            echo 'PIPELINE FINISHED: FAILED ❌'
+            echo 'PIPELINE FINISHED: FAILED'
             echo '========================================='
         }
     }
