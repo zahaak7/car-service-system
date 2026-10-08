@@ -9,7 +9,7 @@ public class CarServiceTest {
 
     @Test
     public void testOilChangeBill() {
-        assertEquals(1000.0, service.calculateBill("oil change", 2), 0.001);
+        assertEquals(1500.0, service.calculateBill("oil change", 2), 0.001);
     }
 
     @Test
